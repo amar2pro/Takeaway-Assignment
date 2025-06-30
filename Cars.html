@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR TALK!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom focus styles for better accessibility */
+        [role="option"]:focus-visible {
+            outline: 3px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        /* Hide outline for mouse users but keep for keyboard */
+        [role="option"]:focus:not(:focus-visible) {
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-red-200 min-h-screen p-8">
+    <div id="galleryParent" tabindex="-1"class="max-w-6xl mx-auto ">
+        <h2 id="galleryLabel" class="font-semibold text-center text-red-600 text-4xl"> CAR TALK WITH LYNN MUNGAI</h2>
+        <h3 class=" font-medium text-center text-black text-2xl">Built for all drivers, no license required</h3>
+        <p class="text-center text-1xl mb-3"> A website that speaks your language,literally!</p>
+        <div  id="carList"
+            role="listbox"
+            aria-labelledby="galleryLabel"
+            tabindex="0"
+            aria-selected="false"
+            aria-activedescendant=""
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-0 m-0">
+            <!--Car 1-->
+            <div 
+                id="car1"
+                role="option" 
+                tabindex="-1" 
+                aria-selected="false"
+                aria-label="Mazda Axela. Stay in your lane and I stay in mine"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative"
+            > 
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/Axela.jpg"                 
+                        alt="A picture of a Mazda Axela that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Mazda Axela</h3>
+                     <p>Stay in your lane and I stay in mine!</p>
+                </div>
+            </div>
+            <!--Car 2-->
+             <div 
+                id="car2"
+                role="option" 
+                tabindex="-1" 
+                aria-selected="false"
+                aria-label="BMW X1. If I were you, I'd drive me too" 
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/bmw x1.jpg"                 
+                        alt="A picture of a BMW X1 that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">BMW X1</h3>
+                     <p> If I were you, I'd drive me too </p>
+                </div>
+            </div>
+            <!--Car 3-->
+             <div 
+                id="car3"
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Toyota CHR. Life is too short to drive boring cars"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/CHR.jpg"                 
+                        alt="A picture of a Toyota CHR that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Toyota CHR</h3>
+                     <p>Life is too short to drive boring cars</p>
+                </div>
+            </div>
+            <!--Car 4-->
+             <div 
+                id="car4" 
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Mazda CX5. You better have a driving license cause you're driving me crazy"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/CX5.jpg"                 
+                        alt="A picture of a Mazda CX5 is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Mazda CX5</h3>
+                     <p> You better have a driving licence cause you're driving me crazy</p>
+                </div>
+            </div>
+            <!--Car 5-->
+             <div 
+                id="car5"
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Nissan Juke. Drive me crazy, why don't yah"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/juke1.jpg"                 
+                        alt="A picture of a Nissan Juke that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Nissan Juke</h3>
+                     <p>Drive me crazy, why don't yah!</p>
+                </div>
+            </div>
+            <!--Car 6-->
+             <div 
+                id="car6"
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Toyota Landcruiser V8. Eat,sleep and drive a Landcruiser"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/landcruiser.jpg"                 
+                        alt="A picture of a Toyota Landcruiser V8 that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Toyota Landcruiser V8</h3>
+                     <p> Eat, sleep and drive a Landcruiser</p>
+                </div>
+            </div>
+            <!--Car 7-->
+             <div 
+                id="car7"
+                role="option"
+                tabindex="-1"
+                aria-selected="false" 
+                aria-label="LandRover Discovery Defender. Stop trying to be perfect, you're not this car"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/landrover discovery.jpg"                 
+                        alt="A picture of a LandRover Discovery Defender that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">LandRover Discovery Defender</h3>
+                     <p> Stop trying to be perfect, you're not this car!</p>
+                </div>
+            </div>
+            <!--Car 8-->
+             <div 
+                id="car8"
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Mercedes Benz. Drive it like you stole it"
+             class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/Mercedes-Benz.jpg"                 
+                        alt="A picture of a Mercedes Benz that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Mercedes-Benz</h3>
+                     <p> Drive it like you stole it</p>
+                </div>
+            </div>
+            <!--Car 9-->
+             <div 
+                id="car9"
+                role="option"
+                tabindex="-1"
+                aria-selected="false"
+                aria-label="Range Rover. You're not in a bad mood love, you just need this car!"
+                class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none relative">
+                <div class="h-40 overflow-hidden rounded-lg">
+                    <img 
+                        src="BookTalk/rangerover.jpg"                 
+                        alt="A picture of a Range Rover that is red in colour"                 
+                        class="w-full h-full object-cover"       
+                     />
+                </div>
+                <div class="p-4">
+                     <h3 class="text-xl font-bold text-gray-900">Range Rover</h3>
+                     <p> You're not in a bad mood love, you just need this car!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer 
+        role="contentinfo"
+        aria-label="Footer by Lynn"
+        class="text-black text-2xl text-center">
+        It's Lynn, of course everything comes in red! 
+    </footer>
+    <script src="Cars.js"></script>
+</body>
+</html>
